@@ -57,7 +57,7 @@ dict_equipes = {'padawan' : ['angular', 'mongodb'], 'labs' : ['react', 'postgres
 
 dict_candidato = {'nome': '', 'linguagem': '', 'framework': '', 'banco': ''}
 
-     # aqui foi criada uma variavel para receber os dados do input
+     # aqui foi criada uma variavel para receber os dados de cada input
 opcao_nome = int(input(' 1- Tiago\n 2- Nicole\n 3- Mateus\n Escolha o candidato:\n'))
 
 if opcao_nome == 1:
@@ -107,23 +107,24 @@ elif opcao_banco == 3:
     print('MySqlServer')
 
 
+##resultado
 print(dict_candidato)
 
 
 
-
+###### condições que recebe o resultado
 
 if dict_candidato == matheus:
-    print('ok')
+    print('\033[32mok\033[m')
 
 elif dict_candidato == tiago:
-    print('ok')   
+    print('\033[32mok\033[m')   
 
 elif dict_candidato == nicole:
-    print('ok')
+    print('\033[32mok\033[m')
 
 else: 
-    print("tente novamente.")
+    print('\033[31mcandidato nao apto\033[m')
 
 # person = Candidato(dict_candidato)
 # pessoa = CandidatoDao(dict_candidatos_validos, dict_equipes)
